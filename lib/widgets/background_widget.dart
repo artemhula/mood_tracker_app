@@ -8,7 +8,7 @@ class Background extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Color moodColor = getColorFromValue(percent).withOpacity(0.4);
+    Color moodColor = getColorFromValue(percent).withOpacity(0.3);
     return AnimatedContainer(
       duration: const Duration(milliseconds: 100),
       color: moodColor,

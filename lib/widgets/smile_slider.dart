@@ -16,13 +16,13 @@ class SmileSlider extends StatelessWidget {
     final moodColor = getColorFromValue(value.toInt());
     return SliderTheme(
       data: SliderTheme.of(context).copyWith(
-        trackHeight: 10.0,
+        trackHeight: 8.0,
         thumbColor: moodColor,
         activeTrackColor: moodColor,
-        inactiveTrackColor: moodColor.withOpacity(0.7),
+        inactiveTrackColor: moodColor,
         trackShape: const RoundedRectSliderTrackShape(),
         thumbShape: const RoundSliderThumbShape(
-          enabledThumbRadius: 13.0,
+          enabledThumbRadius: 12.0,
           elevation: 0,
           pressedElevation: 0,
         ),

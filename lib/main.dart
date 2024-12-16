@@ -15,6 +15,7 @@ class MoodTrackerApp extends StatelessWidget {
     return BlocProvider(
       create: (context) => FaceCubit(),
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         title: 'Mood Tracker',
         theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
